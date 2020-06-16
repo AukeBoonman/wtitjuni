@@ -1,3 +1,30 @@
-hoi
+<script>
+function vakjeVullen(vakjeid){
+	document.addEventListener("click", function(){
+		var elem = document.getElementById(vakjeid);
+		elem.bgColor = 'red';
+	});
+}
+</script>
 
-nieuwe tekst.
+<table>
+	<tr>
+		<td id="vakje00" onclick="vakjeVullen('vakje00')"></td>
+		<td id="vakje01" onclick="vakjeVullen('vakje01')"></td>
+	</tr>
+	<tr>
+		<td id="vakje10" onclick="vakjeVullen('vakje10')"></td>
+		<td id="vakje11" onclick="vakjeVullen('vakje11')"></td>
+	</tr>
+</table>
+
+
+
+<style>
+td{
+border: 2px solid blue;
+width: 40px;
+height: 40px;
+}
+
+</style>
