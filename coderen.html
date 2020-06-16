@@ -1,30 +1,74 @@
-<script>
-function vakjeVullen(vakjeid){
-	document.addEventListener("click", function(){
-		var elem = document.getElementById(vakjeid);
-		elem.bgColor = 'red';
-	});
-}
-</script>
-
+<html>
+    <head>
+        <style>
+            td{
+                width: 30px;
+                height: 30px;
+                border: 2px solid black;
+            }
+            
+            
+        
+        </style>
+    </head>
+    <body>
+        
+        <script>
+            /*
+            function start(){
+                var getal;
+                var input = parseInt(document.getElementById("numberinput"));
+                for(var i = 0; i <= input; i++){ //(initializer block; requirement; incrementor)
+                    return i = getal;
+                    document.getElementById("uitkomst").value
+                }
+                
+            }
+            
+                document.getElementById("uitkomst").innerHTML = parseInt(getal);
+            */
+            
+            function start(){
+                var status = [0,1,2,0,0,2]
+                for(var i = 0; i <= status.length; i++){
+                    var hokid = "hok"+status[i];
+                    if(status[i] === 1) {
+                        document.getElementById(hokid).style.backgroundColor = 'red';
+                    }
+                    if (status[i] === 2) { document.getElementById(hokid).style.backgroundColor = 'yellow';}
+                
+                }
+                
+                /*
+                0 = wit
+                1 = geel;
+                2 = rood;
+                */
+                
+            }
+            
+            
+        </script>
+        
+        
+        
+        <input type="button" onclick="start()" value="Klik mij">
 <table>
-	<tr>
-		<td id="vakje00" onclick="vakjeVullen('vakje00')"></td>
-		<td id="vakje01" onclick="vakjeVullen('vakje01')"></td>
-	</tr>
-	<tr>
-		<td id="vakje10" onclick="vakjeVullen('vakje10')"></td>
-		<td id="vakje11" onclick="vakjeVullen('vakje11')"></td>
-	</tr>
+    <tr>
+        <td id="hok0"></td>
+        <td id="hok1"></td>
+        <td id="hok2"></td>
+        <td id="hok3"></td>
+        <td id="hok4"></td>
+        <td id="hok5"></td>
+
+    </tr>
 </table>
+        <script>
+            
+        </script>
 
+        
+    </body>
 
-
-<style>
-td{
-border: 2px solid blue;
-width: 40px;
-height: 40px;
-}
-
-</style>
+</html>
